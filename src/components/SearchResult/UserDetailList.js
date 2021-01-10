@@ -15,7 +15,6 @@ const UserDetailList = (props) =>{
     const [totalCount, setTotleCount] = useState(0);
     const [isError, setIsError] = useState(false);
 
-    console.log('Detailpage', userName);
     useEffect(() => {
         if(userName)
         handleSearch();
@@ -34,17 +33,13 @@ const UserDetailList = (props) =>{
             setProfileList("");
             setIsError(true);
         }
-        // console.log(resp.data);
     }
 
     const pageCount = Math.ceil(totalCount / PER_PAGE);
 
     function handlePageClick({ selected: selectedPage }) {
         setCurrentPage(selectedPage);
-        console.log('selectedPage',selectedPage);
     }
-
-    // console.log('asfnajk', profileList);
 
     
     return(

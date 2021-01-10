@@ -8,8 +8,6 @@ const App = () => {
   
   const [userName, setUserName]= useState("");
   
-
-  console.log(userName);
   return (
     <div className="App">
       <header className="App-header">
