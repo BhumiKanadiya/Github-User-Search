@@ -54,14 +54,14 @@ const UserDetailList = (props) =>{
                 <div> Something went wrong!! Please refresh </div>
             }
             { 
-                !isError && profileList && profileList.length ==0 &&
+                !isError && profileList && profileList.length ===0 &&
                     <div> No result found for this search!</div>
             }
             { !isError && profileList && profileList.length >0  &&
                 <div>
                    
                     { profileList.map((profile, index) => (
-                        <UserCard profile={profile}></UserCard>
+                        <UserCard profile={profile} key ={profile.id}></UserCard>
                     ))
                     }
 
@@ -72,9 +72,9 @@ const UserDetailList = (props) =>{
                         onPageChange={handlePageClick}
                         marginPagesDisplayed={3}
                         containerClassName={"pagination"}
-                        previousLinkClassName={"pagination_link"}
+                        previousClassName={"pagination__link"}
                         pageClassName={"pagination__link"}
-                        nextLinkClassName={"pagination_link"}
+                        nextClassName={"pagination__link"}
                         // disabledClassName={"pagination__link--disabled"}
                         // activeClassName={"pagination__link--active"}
                     />

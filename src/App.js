@@ -17,7 +17,7 @@ const App = () => {
       </header>
       <Container>
         <UserSearch onSubmit={setUserName}  />
-        { userName !="" &&
+        { userName !=="" &&
           <UserDetailList userName ={userName} />
         }
       </Container>
