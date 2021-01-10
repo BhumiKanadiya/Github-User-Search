@@ -66,16 +66,18 @@ const UserDetailList = (props) =>{
                     }
 
                     <ReactPaginate
-                    previousLabel={"← Previous"}
-                    nextLabel={"Next →"}
-                    pageCount={pageCount}
-                    onPageChange={handlePageClick}
-                    containerClassName={"pagination"}
-                    previousLinkClassName={"pagination__link"}
-                    nextLinkClassName={"pagination__link"}
-                    disabledClassName={"pagination__link--disabled"}
-                    activeClassName={"pagination__link--active"}
-                />
+                        previousLabel={"← Previous"}
+                        nextLabel={"Next →"}
+                        pageCount={pageCount}
+                        onPageChange={handlePageClick}
+                        marginPagesDisplayed={3}
+                        containerClassName={"pagination"}
+                        previousLinkClassName={"pagination_link"}
+                        pageClassName={"pagination__link"}
+                        nextLinkClassName={"pagination_link"}
+                        // disabledClassName={"pagination__link--disabled"}
+                        // activeClassName={"pagination__link--active"}
+                    />
             
             <div className="Count"> Total Records: {totalCount} </div> 
                 </div>

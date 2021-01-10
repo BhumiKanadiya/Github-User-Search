@@ -6,3 +6,24 @@
 .Count{
     text-align: left;
 }
+
+.pagination_link a{
+    border: 1px solid #ddd;  
+    padding: 8px 16px;
+    margin-top: 6px;
+}
+
+.pagination__link{
+    border: 1px solid #ddd;  
+    padding: 8px 16px;
+}
+
+.pagination__link{
+    border: 1px solid #ddd;  
+    padding: 8px 16px;
+}
+.pagination__link.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
